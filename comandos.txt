@@ -1,0 +1,27 @@
+Nome: Alesangela Bezerra da Fonseca | Matrícula: 07404346401
+Comandos utilizados:
+
+1. mkdir tarefa-git-merge
+2. cd tarefa-git-merge
+3. git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead
+4. echo 'Conteúdo inicial na main' > texto.txt
+5. git add texto.txt
+6. git commit -m 'Adicionando o arquivo texto.txt na main'
+7. git checkout -b feature-1
+8. echo 'Alterando o conteúdo na feature-1' > texto.txt
+9. git add texto.txt
+10. git commit -m 'Alterando o arquivo texto.txt na feature-1'
+11. git checkout main
+12. echo 'Alterando conteúdo na main' > texto.txt
+13. git add texto.txt
+14. git commit -m 'Alterando o arquivo texto.txt na main'
+15. git merge feature-1
+16. echo 'Conteúdo final unificado' > texto.txt  # Resolução manual do conflito
+17. git add texto.txt
+18. git commit -m 'Resolvendo conflito entre main e feature-1'
+19. git checkout -b add-comandos
+20. git add comandos.txt
+21. git commit -m Adicionando arquivo comandos.txt com todos os comandos
+22. git remote add origin-atividade https://github.com/alesangelabezerra/curso-git-ead-ifrn
+23. git push -u origin-atividade main
+24. git push -u origin-atividade add-comandos
